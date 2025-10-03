@@ -8,13 +8,11 @@ import {
   StatusBar,
 } from 'react-native';
 
-// URL untuk gambar latar belakang
-const backgroundImage = { uri: "https://images.unsplash.com/photo-1511300636412-01634d339c8c?q=80&w=2070&auto=format&fit=crop" };
+const backgroundImage = { uri: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070&auto=format&fit=crop" };
 
 const App = () => {
   return (
     <View style={styles.container}>
-      {/* Membuat status bar menjadi terang agar terlihat di gambar gelap */}
       <StatusBar barStyle="light-content" />
 
       <ImageBackground source={backgroundImage} resizeMode="cover" style={styles.imageBackground}>
@@ -40,15 +38,15 @@ const styles = StyleSheet.create({
   },
   imageBackground: {
     flex: 1,
-    justifyContent: 'flex-end', // Mendorong konten ke bawah
+    justifyContent: 'flex-end', 
   },
   overlay: {
-    backgroundColor: 'rgba(0, 0, 0, 0.4)', // Lapisan gelap untuk kontras teks
+    backgroundColor: 'rgba(0, 0, 0, 0.4)', 
     padding: 24,
-    paddingBottom: 48, // Beri ruang lebih di bagian bawah
+    paddingBottom: 48, 
   },
   textContainer: {
-    marginBottom: 30, // Jarak antara teks dan tombol
+    marginBottom: 30, 
   },
   title: {
     fontSize: 42,
@@ -63,13 +61,13 @@ const styles = StyleSheet.create({
     lineHeight: 24,
   },
   button: {
-    backgroundColor: '#00C89C', // Warna hijau toska
+    backgroundColor: '#00C89C', 
     paddingVertical: 16,
-    borderRadius: 30, // Membuat tombol menjadi oval
+    borderRadius: 30, 
     alignItems: 'center',
   },
   buttonText: {
-    color: '#0D2C24', // Warna teks gelap agar kontras
+    color: '#0D2C24',
     fontSize: 18,
     fontWeight: 'bold',
   },
